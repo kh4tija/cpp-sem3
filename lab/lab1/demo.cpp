@@ -1,4 +1,4 @@
-#include "array.cpp"
+include "array.cpp"
 using custom_array = custom_array; // Alias for clarity
 #include <iostream>
 using namespace std;
