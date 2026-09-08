@@ -1,12 +1,12 @@
 #include "array.cpp"
+using custom_array = custom_array; // Alias for clarity
+#include <iostream>
+using namespace std;
  
-int main()
-
-{
+int main(){
     char repeat;
-    int choice;
-    int pos, ele, l, u;
-    array<int> arr;
+    int choice, l, u, ele, pos;
+    custom_array arr; // Assuming custom_array does not require a template argument
  
     do
     {
