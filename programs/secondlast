@@ -1,0 +1,14 @@
+Algorithm SecondLast(head)
+
+1. If head == NULL OR head->next == NULL
+       Print "Second last node does not exist"
+       Return
+
+2. temp ← head
+
+3. While temp->next->next ≠ NULL
+       temp ← temp->next
+
+4. Print "Second last node =", temp->data
+
+5. Stop

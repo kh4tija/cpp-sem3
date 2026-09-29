@@ -1,0 +1,17 @@
+Algorithm KthFromLast(head, k)
+
+1. p ← head
+2. q ← head
+
+3. For i ← 1 to k
+       If q = NULL
+           Return NULL
+       q ← q → next
+
+4. While q ≠ NULL
+       p ← p → next
+       q ← q → next
+
+5. Return p
+
+6. Stop

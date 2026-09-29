@@ -1,0 +1,12 @@
+Algorithm FindMiddle(head)
+
+1. slow ← head
+2. fast ← head
+
+3. While fast ≠ NULL AND fast → next ≠ NULL
+       slow ← slow → next
+       fast ← fast → next → next
+
+4. Return slow
+
+5. Stop

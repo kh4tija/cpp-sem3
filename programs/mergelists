@@ -1,0 +1,18 @@
+Algorithm MergeSortedLists(head1, head2)
+
+1. If head1 = NULL
+       Return head2
+
+2. If head2 = NULL
+       Return head1
+
+3. If head1 → data < head2 → data
+       head ← head1
+       head → next ← MergeSortedLists(head1 → next, head2)
+   Else
+       head ← head2
+       head → next ← MergeSortedLists(head1, head2 → next)
+
+4. Return head
+
+5. Stop
